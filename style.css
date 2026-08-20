@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Vazir', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    line-height: 1.8;
+    color: #1e293b;
+}
+/* ===== کارت اصلی ===== */
+.card {
+    max-width: 750px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 3rem 2.5rem;
+    border-radius: 40px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+.card:hover {
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.12);
+    transform: translateY(-3px);
+}
+/* ===== نشان ===== */
+.badge {
+    display: inline-block;
+    background: #eef2ff;
+    color: #4f46e5;
+    font-size: 0.75rem;
+    padding: 0.3rem 1.2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 1.8rem;
+    border: 1px solid #e0e7ff;
+}
+.avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #4f46e5, #6d3c96);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 12px 30px rgba(79, 70, 229, 0.25);
+    user-select: none;
+}
+/* ===== عنوان‌ها ===== */
+h1 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin-bottom: 0.3rem;
+    background: linear-gradient(135deg, #633894, #3b7ac2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.subhead {
+    font-size: 1.1rem;
+    color: #64748b;
+    margin-bottom: 1.8rem;
+    border-right: 4px solid #4f46e5;
+    padding-right: 1rem;
+    font-weight: 400;
+}
+/* ===== متن بیو ===== */
+.bio p {
+    margin-bottom: 1.2rem;
+    font-size: 1.05rem;
+    color: #334155;
+}
+.bio strong {
+    color: #0f172a;
+}
+.bio .highlight {
+    color: #55117c;
+    font-weight: 600;
+}
+/* ===== بخش مهارت‌ها ===== */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin: 2rem 0 2.2rem;
+}
+.skills span {
+    background: #ffffff;
+    padding: 0.4rem 1.3rem;
+    border-radius: 40px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #1e293b;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+    transition: all 0.2s ease;
+}
+.skills span:hover {
+border-color: #7e46e5;
+color: #7e46e5;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(79, 70, 229, 0.08);
+}
+/* ===== باکس آمار ===== */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    background: #f8fafc;
+    padding: 1.2rem 1.5rem;
+    border-radius: 20px;
+    margin: 1.8rem 0;
+    border: 1px solid #eef2f6;
+    text-align: center;
+}
+.stats-item .number {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #0f172a;
+}
+.stats-item .label {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    font-weight: 500;
+}
+/* ===== نقل‌قول ===== */
+.quote {
+    background: linear-gradient(135deg, #f1f4ff, #faf5ff);
+    padding: 1.2rem 1.8rem;
+    border-radius: 18px;
+    border-right: 6px solid #4f46e5;
+    margin: 1.8rem 0;
+    font-style: italic;
+    color: #1e293b;
+    font-size: 0.95rem;
+}
+.quote i {
+    color: #4f46e5;
+    font-style: normal;
+    font-size: 1.4rem;
+}
+/* ===== دکمه ===== */
+.btn {
+    display: inline-block;
+    background: #0f172a;
+    color: #fff;
+    padding: 0.8rem 2.8rem;
+    border-radius: 60px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.25s ease;
+    border: none;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+.btn:hover {
+    background: #4f46e5;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px -8px rgba(79, 70, 229, 0.45);
+}
+.btn-outline {
+    background: transparent;
+    color: #0f172a;
+    border: 2px solid #e2e8f0;
+    margin-right: 0.8rem;
+}
+.btn-outline:hover {
+    background: #f1f5f9;
+    border-color: #4f46e5;
+    box-shadow: none;
+}
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+}
+/* ===== لینک‌های اجتماعی ===== */
+.social {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.8rem;
+    flex-wrap: wrap;
+    border-top: 1px solid #eef2f6;
+    padding-top: 2rem;
+}
+/* ===== ریسپانسیو برای موبایل ===== */
+@media (max-width: 550px) {
+    .card {
+        padding: 2rem 1.2rem;
+        border-radius: 28px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .avatar {
+        width: 70px;
+        height: 70px;
+        font-size: 2.2rem;
+    }
+    .stats {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    .btn-group {
+        flex-direction: column;
+    }
+    .btn-outline {
+        margin-right: 0;
+    }
+}
